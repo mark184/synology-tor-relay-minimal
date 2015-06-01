@@ -10,10 +10,6 @@ SocksPolicy reject *
 ORPort 9001
 DirPort 8080
 
-Nickname qotorrelay
-RelayBandwidthRate 50 KB
-RelayBandwidthBurst 100 KB
-
 ExitPolicy accept *:20-23     # FTP, SSH, telnet
 ExitPolicy accept *:53        # DNS
 ExitPolicy accept *:80        # HTTP
