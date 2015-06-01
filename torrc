@@ -7,7 +7,10 @@ SocksBindAddress 0.0.0.0
 SocksPolicy accept 192.168.1.0/24
 SocksPolicy reject *
 
+#Relay
 ORPort 9001
+ExitRelay 1
+
 DirPort 8080
 
 ExitPolicy accept *:20-23     # FTP, SSH, telnet
@@ -23,3 +26,6 @@ ExitPolicy accept *:563       # NNTP over SSL
 ExitPolicy accept *:989-995   # FTP over SSL, Netnews Administration System, telnets, IMAP over SSL, ircs, POP3 over SSL
 ExitPolicy accept *:6660-6669 # IRC
 ExitPolicy reject *:*
+
+#Contact
+ContactInfo changeme@localhost
