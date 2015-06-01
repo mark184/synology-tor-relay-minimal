@@ -15,6 +15,6 @@ ADD ./torrc /etc/tor/torrc
 VOLUME /.tor
 
 # Generate a random nickname for the relay
-RUN echo "Nickname Synology-$(head -c 16 /dev/urandom  | sha1sum | cut -c1-10)" >> /etc/tor/torrc
+RUN echo "Nickname Syno$(head -c 16 /dev/urandom  | sha1sum | cut -c1-10)" >> /etc/tor/torrc
 
 CMD /usr/bin/tor -f /etc/tor/torrc
