@@ -5,7 +5,7 @@ RUN apk update
 RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 # Ports
-EXPOSE 443
+EXPOSE 9001
 EXPOSE 9050
 EXPOSE 8080
 
