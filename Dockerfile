@@ -18,4 +18,5 @@ VOLUME /.tor
 # Generate a random nickname for the relay
 RUN echo "Nickname $(head -c 19 /dev/urandom  | sha1sum | cut -c1-19)" >> /etc/tor/torrc
 
+USER tor
 CMD /usr/bin/tor -f /etc/tor/torrc
