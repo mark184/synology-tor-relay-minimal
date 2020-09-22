@@ -28,4 +28,4 @@ ExitPolicy accept *:6660-6669 # IRC
 ExitPolicy reject *:*
 
 #Contact
-ContactInfo changeme@localhost
+ContactInfo mark184@gmail.com
