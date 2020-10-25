@@ -2,16 +2,18 @@
 Log notice stdout
 
 # SocksProxy
-SocksPort 9050 
+SocksPort 0 
 SocksBindAddress 0.0.0.0 
 SocksPolicy accept 192.168.1.0/24
 SocksPolicy reject *
 
 #Relay
 ORPort 9001
-ExitRelay 1
+ExitRelay 0
 
 DirPort 9030
+
+ControlSocket 0
 
 ExitPolicy reject *:*
 
