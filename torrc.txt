@@ -1,0 +1,41 @@
+# Logging option
+Log notice stdout
+
+# SocksProxy
+SocksPort 9050 
+SocksBindAddress 0.0.0.0 
+SocksPolicy accept 192.168.1.0/24
+SocksPolicy reject *
+
+#Relay
+ORPort 9001
+ExitRelay 1
+
+DirPort 8080
+
+ExitPolicy accept *:20-23     # FTP, SSH, telnet
+ExitPolicy accept *:53        # DNS
+ExitPolicy accept *:80        # HTTP
+ExitPolicy accept *:110       # POP3
+ExitPolicy accept *:119       # NNTP
+ExitPolicy accept *:143       # IMAP
+ExitPolicy accept *:194       # IRC
+ExitPolicy accept *:443       # HTTPS
+ExitPolicy accept *:531       # IRC/AIM
+ExitPolicy accept *:563       # NNTP over SSL
+ExitPolicy accept *:989-995   # FTP over SSL, Netnews Administration System, telnets, IMAP over SSL, ircs, POP3 over SSL
+ExitPolicy accept *:6660-6669 # IRC
+ExitPolicy reject *:*
+
+#Contact
+Nickname aardman1023
+ContactInfo mark184@gmail.com
+
+# Run Tor as a regular user (do not change this)
+User tord
+DataDirectory /var/lib/tor
+
+# Mirror directory information for others
+DirPort 9030
+
+ControlSocket 0
