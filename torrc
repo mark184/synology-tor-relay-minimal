@@ -28,4 +28,5 @@ ExitPolicy accept *:6660-6669 # IRC
 ExitPolicy reject *:*
 
 #Contact
+Nickname Aardman24425
 ContactInfo mark184@gmail.com
