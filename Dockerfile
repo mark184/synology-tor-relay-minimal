@@ -8,6 +8,7 @@ RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/e
 EXPOSE 9001
 EXPOSE 9050
 EXPOSE 8080
+EXPOSE 443
 
 RUN rm /var/cache/apk/*
 
