@@ -8,9 +8,9 @@ SocksPolicy accept 192.168.1.0/24
 SocksPolicy reject *
 
 #Relay
-ORPort 9001
-ExitRelay 1
-IPv6Exit 1
+ORPort 443
+ExitRelay 0
+IPv6Exit 0
 
 DirPort 8080
 
